@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="com.harbour.ws.dao.test.StudentDao">
+    <select id="findAll" resultType="com.harbour.ws.domain.test.Student">
+        select id,name,sex,age from student
+    </select>
+</mapper>
